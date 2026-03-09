@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ResiliencePro — Operational Resilience Command Platform</title>
+  <meta name="description" content="ResiliencePro is the enterprise operational resilience platform that helps organizations execute complex procedures, coordinate teams, and manage critical operations in real time.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect rx='20' width='100' height='100' fill='%230ea5e9'/><path d='M30 55L45 70L70 35' stroke='white' stroke-width='10' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__container">
+      <a href="#" class="nav__logo">
+        <img src="assets/images/logo.png" alt="ResiliencePro" class="nav__logo-img">
+      </a>
+      <div class="nav__links" id="navLinks">
+        <a href="#features" class="nav__link">Features</a>
+        <a href="#industries" class="nav__link">Industries</a>
+        <a href="#platform" class="nav__link">Platform</a>
+        <a href="#benefits" class="nav__link">Benefits</a>
+        <a href="#contact" class="nav__link">Contact</a>
+      </div>
+      <div class="nav__actions">
+        <a href="#contact" class="btn btn--ghost">Sign In</a>
+        <a href="#contact" class="btn btn--primary">Request Demo</a>
+      </div>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero__bg">
+      <div class="hero__grid-pattern"></div>
+      <div class="hero__glow hero__glow--1"></div>
+      <div class="hero__glow hero__glow--2"></div>
+    </div>
+    <div class="container">
+      <div class="hero__content" data-animate="fade-up">
+        <div class="hero__badge">
+          <span class="hero__badge-dot"></span>
+          Trusted by enterprises across 6 industries
+        </div>
+        <h1 class="hero__title">
+          The Operational Resilience<br>
+          <span class="hero__title-gradient">Command Platform</span>
+        </h1>
+        <p class="hero__description">
+          Execute complex operational procedures, coordinate teams in real time, and maintain complete visibility across your critical operations. One platform for disaster recovery, emergency response, and operational runbooks.
+        </p>
+        <div class="hero__cta">
+          <a href="#contact" class="btn btn--primary btn--lg">
+            Request a Demo
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#platform" class="btn btn--outline btn--lg">
+            See the Platform
+          </a>
+        </div>
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <span class="hero__stat-number" data-count="99.9">0</span><span class="hero__stat-suffix">%</span>
+            <span class="hero__stat-label">Uptime SLA</span>
+          </div>
+          <div class="hero__stat-divider"></div>
+          <div class="hero__stat">
+            <span class="hero__stat-number" data-count="73">0</span><span class="hero__stat-suffix">%</span>
+            <span class="hero__stat-label">Faster Response</span>
+          </div>
+          <div class="hero__stat-divider"></div>
+          <div class="hero__stat">
+            <span class="hero__stat-number" data-count="10">0</span><span class="hero__stat-suffix">k+</span>
+            <span class="hero__stat-label">Procedures Run</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dashboard Preview -->
+      <div class="hero__preview" data-animate="fade-up" data-delay="200">
+        <div class="dashboard-preview">
+          <div class="dashboard-preview__header">
+            <div class="dashboard-preview__dots">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="dashboard-preview__title">ResiliencePro Command Dashboard</div>
+            <div class="dashboard-preview__status">
+              <span class="status-dot status-dot--live"></span> Live
+            </div>
+          </div>
+          <div class="dashboard-preview__body">
+            <!-- Top stats row -->
+            <div class="dash-stats">
+              <div class="dash-stat-card">
+                <div class="dash-stat-card__label">Active Procedures</div>
+                <div class="dash-stat-card__value">12</div>
+                <div class="dash-stat-card__bar"><span style="width:75%"></span></div>
+              </div>
+              <div class="dash-stat-card">
+                <div class="dash-stat-card__label">Tasks In Progress</div>
+                <div class="dash-stat-card__value">47</div>
+                <div class="dash-stat-card__bar"><span style="width:60%" class="bar--warning"></span></div>
+              </div>
+              <div class="dash-stat-card">
+                <div class="dash-stat-card__label">Completed Today</div>
+                <div class="dash-stat-card__value">156</div>
+                <div class="dash-stat-card__bar"><span style="width:90%" class="bar--success"></span></div>
+              </div>
+              <div class="dash-stat-card">
+                <div class="dash-stat-card__label">SLA Compliance</div>
+                <div class="dash-stat-card__value">98.2%</div>
+                <div class="dash-stat-card__bar"><span style="width:98%" class="bar--success"></span></div>
+              </div>
+            </div>
+            <!-- Main content area -->
+            <div class="dash-main">
+              <div class="dash-procedures">
+                <div class="dash-section-title">Active Procedures</div>
+                <div class="dash-procedure-item">
+                  <div class="dash-procedure-item__status dash-procedure-item__status--active"></div>
+                  <div class="dash-procedure-item__info">
+                    <div class="dash-procedure-item__name">DR Exercise - Core Banking</div>
+                    <div class="dash-procedure-item__meta">Tier 1 &middot; 8/12 tasks &middot; 3 teams</div>
+                  </div>
+                  <div class="dash-procedure-item__progress"><span style="width:67%"></span></div>
+                </div>
+                <div class="dash-procedure-item">
+                  <div class="dash-procedure-item__status dash-procedure-item__status--warning"></div>
+                  <div class="dash-procedure-item__info">
+                    <div class="dash-procedure-item__name">Emergency Drill - Refinery Complex</div>
+                    <div class="dash-procedure-item__meta">Critical &middot; 5/15 tasks &middot; 5 teams</div>
+                  </div>
+                  <div class="dash-procedure-item__progress"><span style="width:33%" class="bar--warning"></span></div>
+                </div>
+                <div class="dash-procedure-item">
+                  <div class="dash-procedure-item__status dash-procedure-item__status--active"></div>
+                  <div class="dash-procedure-item__info">
+                    <div class="dash-procedure-item__name">Maintenance - Data Center East</div>
+                    <div class="dash-procedure-item__meta">Tier 2 &middot; 11/14 tasks &middot; 2 teams</div>
+                  </div>
+                  <div class="dash-procedure-item__progress"><span style="width:79%" class="bar--success"></span></div>
+                </div>
+                <div class="dash-procedure-item">
+                  <div class="dash-procedure-item__status dash-procedure-item__status--success"></div>
+                  <div class="dash-procedure-item__info">
+                    <div class="dash-procedure-item__name">BCP Test - Mobile Banking</div>
+                    <div class="dash-procedure-item__meta">Tier 1 &middot; 10/10 tasks &middot; 2 teams</div>
+                  </div>
+                  <div class="dash-procedure-item__progress"><span style="width:100%" class="bar--success"></span></div>
+                </div>
+              </div>
+              <div class="dash-sidebar">
+                <div class="dash-section-title">Live Activity</div>
+                <div class="dash-activity">
+                  <div class="dash-activity-item">
+                    <div class="dash-activity-item__dot dash-activity-item__dot--success"></div>
+                    <div class="dash-activity-item__text">DB failover completed</div>
+                    <div class="dash-activity-item__time">2m ago</div>
+                  </div>
+                  <div class="dash-activity-item">
+                    <div class="dash-activity-item__dot dash-activity-item__dot--warning"></div>
+                    <div class="dash-activity-item__text">Approval pending: Network switch</div>
+                    <div class="dash-activity-item__time">5m ago</div>
+                  </div>
+                  <div class="dash-activity-item">
+                    <div class="dash-activity-item__dot dash-activity-item__dot--info"></div>
+                    <div class="dash-activity-item__text">Team Alpha assigned to Step 7</div>
+                    <div class="dash-activity-item__time">8m ago</div>
+                  </div>
+                  <div class="dash-activity-item">
+                    <div class="dash-activity-item__dot dash-activity-item__dot--danger"></div>
+                    <div class="dash-activity-item__text">SLA breach: DNS validation</div>
+                    <div class="dash-activity-item__time">12m ago</div>
+                  </div>
+                  <div class="dash-activity-item">
+                    <div class="dash-activity-item__dot dash-activity-item__dot--success"></div>
+                    <div class="dash-activity-item__text">Evidence uploaded: Backup verified</div>
+                    <div class="dash-activity-item__time">15m ago</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Problem Section -->
+  <section class="problem" id="problem">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-label">The Challenge</span>
+        <h2 class="section-title">Critical operations still run<br>on spreadsheets and emails</h2>
+        <p class="section-description">Organizations across industries face the same challenge: coordinating complex, multi-team operational procedures with tools that were never designed for real-time critical operations.</p>
+      </div>
+      <div class="problem__grid" data-animate="fade-up" data-delay="200">
+        <div class="problem__card">
+          <div class="problem__card-icon problem__card-icon--red">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+          </div>
+          <h3 class="problem__card-title">No Real-Time Visibility</h3>
+          <p class="problem__card-text">Teams update spreadsheets and send status emails. By the time leadership sees the update, the situation has already changed.</p>
+        </div>
+        <div class="problem__card">
+          <div class="problem__card-icon problem__card-icon--red">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 class="problem__card-title">Manual Coordination</h3>
+          <p class="problem__card-text">Phone calls, chat messages, and meetings to coordinate between DBA, network, platform, and application teams. Errors slip through.</p>
+        </div>
+        <div class="problem__card">
+          <div class="problem__card-icon problem__card-icon--red">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
+          </div>
+          <h3 class="problem__card-title">Audit Gaps</h3>
+          <p class="problem__card-text">Regulators want evidence of who did what and when. Reconstructing timelines from email threads after the fact is unreliable and time-consuming.</p>
+        </div>
+        <div class="problem__card">
+          <div class="problem__card-icon problem__card-icon--red">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3 class="problem__card-title">SLA Breaches</h3>
+          <p class="problem__card-text">Without automated tracking, teams miss SLA deadlines. Escalations happen too late, and recovery time objectives are routinely exceeded.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solution Section -->
+  <section class="solution">
+    <div class="container">
+      <div class="solution__inner" data-animate="fade-up">
+        <div class="solution__content">
+          <span class="section-label">The Solution</span>
+          <h2 class="section-title">One command platform<br>for all critical operations</h2>
+          <p class="section-description">ResiliencePro replaces spreadsheets, emails, and manual coordination with a real-time operational command platform. Every team, every task, every procedure — orchestrated from a single pane of glass.</p>
+          <div class="solution__features">
+            <div class="solution__feature">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 0a10 10 0 110 20 10 10 0 010-20zm-1.5 14.5l7-7-1.4-1.4-5.6 5.6-2.6-2.6-1.4 1.4 4 4z" fill="#0ea5e9"/></svg>
+              <span>Real-time task orchestration across teams</span>
+            </div>
+            <div class="solution__feature">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 0a10 10 0 110 20 10 10 0 010-20zm-1.5 14.5l7-7-1.4-1.4-5.6 5.6-2.6-2.6-1.4 1.4 4 4z" fill="#0ea5e9"/></svg>
+              <span>Automated SLA monitoring and escalation</span>
+            </div>
+            <div class="solution__feature">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 0a10 10 0 110 20 10 10 0 010-20zm-1.5 14.5l7-7-1.4-1.4-5.6 5.6-2.6-2.6-1.4 1.4 4 4z" fill="#0ea5e9"/></svg>
+              <span>Complete audit trail for every action</span>
+            </div>
+            <div class="solution__feature">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 0a10 10 0 110 20 10 10 0 010-20zm-1.5 14.5l7-7-1.4-1.4-5.6 5.6-2.6-2.6-1.4 1.4 4 4z" fill="#0ea5e9"/></svg>
+              <span>Multi-industry, multi-tenant architecture</span>
+            </div>
+          </div>
+        </div>
+        <div class="solution__visual">
+          <div class="solution__card">
+            <div class="solution__card-header">
+              <span class="solution__card-icon solution__card-icon--blue">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              </span>
+              <span>Real-Time Updates</span>
+            </div>
+            <p class="solution__card-text">Every status change, approval, and escalation is pushed to all connected users instantly via SignalR.</p>
+          </div>
+          <div class="solution__card">
+            <div class="solution__card-header">
+              <span class="solution__card-icon solution__card-icon--green">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+              </span>
+              <span>Evidence & Compliance</span>
+            </div>
+            <p class="solution__card-text">Automatic evidence capture, timestamped audit logs, and one-click regulator-ready export packages.</p>
+          </div>
+          <div class="solution__card">
+            <div class="solution__card-header">
+              <span class="solution__card-icon solution__card-icon--amber">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </span>
+              <span>SLA Intelligence</span>
+            </div>
+            <p class="solution__card-text">Automatic breach detection, proactive alerts, and escalation workflows before deadlines are missed.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-label">Capabilities</span>
+        <h2 class="section-title">Everything you need to command<br>critical operations</h2>
+        <p class="section-description">A complete operational resilience platform built for enterprise-grade procedures, compliance, and real-time coordination.</p>
+      </div>
+      <div class="features__grid" data-animate="fade-up" data-delay="200">
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3 class="feature-card__title">Command Dashboard</h3>
+          <p class="feature-card__text">Single pane of glass for all active operations. Live status, progress tracking, SLA timers, and team assignments — updated in real time.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3 class="feature-card__title">Real-Time Coordination</h3>
+          <p class="feature-card__text">Every task update, status change, and approval is pushed to all connected users instantly. No refresh needed — ever.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
+          <h3 class="feature-card__title">Runbook Execution</h3>
+          <p class="feature-card__text">Define, version, and execute structured procedures with step-by-step task flows, dependencies, and multi-day timelines.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3 class="feature-card__title">SLA Monitoring</h3>
+          <p class="feature-card__text">Automatic SLA tracking with proactive breach alerts, escalation workflows, and real-time countdown timers on every task.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 class="feature-card__title">Audit & Compliance</h3>
+          <p class="feature-card__text">Every action is logged with who, what, when, and why. Export regulator-ready evidence packages with one click.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 class="feature-card__title">Multi-Team Workflows</h3>
+          <p class="feature-card__text">Assign tasks to specific roles — DBA, Network, Platform, QA, Approvers — with approval gates and handoff tracking.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+          </div>
+          <h3 class="feature-card__title">Evidence Capture</h3>
+          <p class="feature-card__text">Checklists, comments, attachments, and timestamped screenshots — all linked to specific tasks and procedures.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <h3 class="feature-card__title">Incident Management</h3>
+          <p class="feature-card__text">When incidents happen, instantly spin up response procedures, assign teams, and track resolution in real time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Industries Section -->
+  <section class="industries" id="industries">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-label">Industries</span>
+        <h2 class="section-title">Built for the industries where<br>resilience is non-negotiable</h2>
+        <p class="section-description">ResiliencePro adapts to the operational vocabulary, compliance requirements, and workflows of each industry.</p>
+      </div>
+      <div class="industries__grid" data-animate="fade-up" data-delay="200">
+        <div class="industry-card" data-industry="banking">
+          <div class="industry-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M3 10h18M5 6l7-3 7 3M4 10v11M20 10v11M8 14v3M12 14v3M16 14v3"/></svg>
+          </div>
+          <h3 class="industry-card__title">Banking & Finance</h3>
+          <p class="industry-card__text">DR exercises, BCP testing, and regulatory compliance for core banking, card systems, internet banking, and trading platforms.</p>
+          <div class="industry-card__tags">
+            <span>DR Testing</span>
+            <span>BCP</span>
+            <span>BNM Compliance</span>
+          </div>
+        </div>
+        <div class="industry-card" data-industry="oilgas">
+          <div class="industry-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v6M12 18v4M4.93 4.93l4.24 4.24M14.83 14.83l4.24 4.24M2 12h6M18 12h4M4.93 19.07l4.24-4.24M14.83 9.17l4.24-4.24"/></svg>
+          </div>
+          <h3 class="industry-card__title">Oil & Gas</h3>
+          <p class="industry-card__text">Emergency drills, HSE compliance, shutdown/startup procedures for refineries, pipelines, offshore platforms, and LNG facilities.</p>
+          <div class="industry-card__tags">
+            <span>Emergency Drills</span>
+            <span>HSE</span>
+            <span>Turnaround</span>
+          </div>
+        </div>
+        <div class="industry-card" data-industry="energy">
+          <div class="industry-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <h3 class="industry-card__title">Energy & Utilities</h3>
+          <p class="industry-card__text">Grid restoration, power plant procedures, and utility emergency response with multi-agency coordination and regulatory evidence.</p>
+          <div class="industry-card__tags">
+            <span>Grid Restoration</span>
+            <span>NERC CIP</span>
+            <span>Outage Mgmt</span>
+          </div>
+        </div>
+        <div class="industry-card" data-industry="telecom">
+          <div class="industry-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+          </div>
+          <h3 class="industry-card__title">Telecommunications</h3>
+          <p class="industry-card__text">Network failover procedures, service restoration playbooks, and NOC coordination for telco infrastructure and services.</p>
+          <div class="industry-card__tags">
+            <span>Network DR</span>
+            <span>NOC Ops</span>
+            <span>Service Restoration</span>
+          </div>
+        </div>
+        <div class="industry-card" data-industry="datacenter">
+          <div class="industry-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+          </div>
+          <h3 class="industry-card__title">Data Centers</h3>
+          <p class="industry-card__text">Maintenance windows, migration runbooks, failover testing, and infrastructure disaster recovery across multi-site environments.</p>
+          <div class="industry-card__tags">
+            <span>Failover Testing</span>
+            <span>Migration</span>
+            <span>Maintenance</span>
+          </div>
+        </div>
+        <div class="industry-card" data-industry="manufacturing">
+          <div class="industry-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 20h20M6 20V8l6-4v16M18 20V4l-6 4"/><path d="M10 12h1M10 16h1"/></svg>
+          </div>
+          <h3 class="industry-card__title">Manufacturing</h3>
+          <p class="industry-card__text">Plant shutdown/startup procedures, safety drills, production line changeover coordination, and equipment maintenance workflows.</p>
+          <div class="industry-card__tags">
+            <span>Plant Safety</span>
+            <span>Changeover</span>
+            <span>Maintenance</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Platform Preview Section -->
+  <section class="platform" id="platform">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-label">Platform</span>
+        <h2 class="section-title">See the platform in action</h2>
+        <p class="section-description">A purpose-built interface designed for high-stakes operational coordination.</p>
+      </div>
+
+      <div class="platform__tabs" data-animate="fade-up" data-delay="100">
+        <button class="platform__tab platform__tab--active" data-tab="dashboard">Command Dashboard</button>
+        <button class="platform__tab" data-tab="runbook">Runbook Execution</button>
+        <button class="platform__tab" data-tab="task">Task Management</button>
+      </div>
+
+      <div class="platform__preview" data-animate="fade-up" data-delay="200">
+        <!-- Dashboard Tab -->
+        <div class="platform__panel platform__panel--active" id="tab-dashboard">
+          <div class="platform-screen">
+            <div class="platform-screen__header">
+              <div class="platform-screen__dots"><span></span><span></span><span></span></div>
+              <div class="platform-screen__url">app.resiliencepro.io/dashboard</div>
+            </div>
+            <div class="platform-screen__body">
+              <div class="platform-dash">
+                <div class="platform-dash__sidebar">
+                  <div class="platform-dash__nav-item platform-dash__nav-item--active">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                    Dashboard
+                  </div>
+                  <div class="platform-dash__nav-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                    Procedures
+                  </div>
+                  <div class="platform-dash__nav-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                    Teams
+                  </div>
+                  <div class="platform-dash__nav-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    Audit Log
+                  </div>
+                  <div class="platform-dash__nav-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+                    Settings
+                  </div>
+                </div>
+                <div class="platform-dash__content">
+                  <div class="platform-dash__topbar">
+                    <h3>Operations Dashboard</h3>
+                    <div class="platform-dash__topbar-right">
+                      <span class="status-dot status-dot--live"></span> Live
+                      <span class="platform-dash__user">Admin</span>
+                    </div>
+                  </div>
+                  <div class="platform-dash__metrics">
+                    <div class="platform-metric">
+                      <div class="platform-metric__value">12</div>
+                      <div class="platform-metric__label">Active</div>
+                    </div>
+                    <div class="platform-metric platform-metric--warning">
+                      <div class="platform-metric__value">3</div>
+                      <div class="platform-metric__label">At Risk</div>
+                    </div>
+                    <div class="platform-metric platform-metric--success">
+                      <div class="platform-metric__value">156</div>
+                      <div class="platform-metric__label">Completed</div>
+                    </div>
+                    <div class="platform-metric platform-metric--danger">
+                      <div class="platform-metric__value">2</div>
+                      <div class="platform-metric__label">Breached</div>
+                    </div>
+                  </div>
+                  <div class="platform-dash__table">
+                    <div class="platform-dash__table-header">
+                      <span>Procedure</span><span>Status</span><span>Progress</span><span>Teams</span>
+                    </div>
+                    <div class="platform-dash__table-row">
+                      <span>Core Banking DR</span>
+                      <span class="badge badge--active">In Progress</span>
+                      <span><div class="mini-progress"><span style="width:67%"></span></div></span>
+                      <span>3</span>
+                    </div>
+                    <div class="platform-dash__table-row">
+                      <span>Refinery Emergency Drill</span>
+                      <span class="badge badge--warning">At Risk</span>
+                      <span><div class="mini-progress"><span style="width:33%" class="bar--warning"></span></div></span>
+                      <span>5</span>
+                    </div>
+                    <div class="platform-dash__table-row">
+                      <span>Data Center Maintenance</span>
+                      <span class="badge badge--active">In Progress</span>
+                      <span><div class="mini-progress"><span style="width:79%"></span></div></span>
+                      <span>2</span>
+                    </div>
+                    <div class="platform-dash__table-row">
+                      <span>Network Failover Test</span>
+                      <span class="badge badge--success">Completed</span>
+                      <span><div class="mini-progress"><span style="width:100%" class="bar--success"></span></div></span>
+                      <span>2</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Runbook Tab -->
+        <div class="platform__panel" id="tab-runbook">
+          <div class="platform-screen">
+            <div class="platform-screen__header">
+              <div class="platform-screen__dots"><span></span><span></span><span></span></div>
+              <div class="platform-screen__url">app.resiliencepro.io/procedures/core-banking-dr</div>
+            </div>
+            <div class="platform-screen__body">
+              <div class="runbook-preview">
+                <div class="runbook-preview__header">
+                  <h3>Core Banking DR Exercise</h3>
+                  <div class="runbook-preview__meta">
+                    <span class="badge badge--active">In Progress</span>
+                    <span>Tier 1</span>
+                    <span>Started: 09:00 AM</span>
+                  </div>
+                </div>
+                <div class="runbook-preview__pipeline">
+                  <div class="pipeline-stage pipeline-stage--done">
+                    <div class="pipeline-stage__dot"></div>
+                    <div class="pipeline-stage__label">Pre-Check</div>
+                  </div>
+                  <div class="pipeline-stage pipeline-stage--done">
+                    <div class="pipeline-stage__dot"></div>
+                    <div class="pipeline-stage__label">DB Failover</div>
+                  </div>
+                  <div class="pipeline-stage pipeline-stage--active">
+                    <div class="pipeline-stage__dot"></div>
+                    <div class="pipeline-stage__label">App Validation</div>
+                  </div>
+                  <div class="pipeline-stage">
+                    <div class="pipeline-stage__dot"></div>
+                    <div class="pipeline-stage__label">Verification</div>
+                  </div>
+                  <div class="pipeline-stage">
+                    <div class="pipeline-stage__dot"></div>
+                    <div class="pipeline-stage__label">Sign-Off</div>
+                  </div>
+                </div>
+                <div class="runbook-preview__tasks">
+                  <div class="runbook-task runbook-task--done">
+                    <span class="runbook-task__check">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                    </span>
+                    <span class="runbook-task__name">Verify backup integrity</span>
+                    <span class="badge badge--success badge--sm">Done</span>
+                    <span class="runbook-task__assignee">DBA Team</span>
+                  </div>
+                  <div class="runbook-task runbook-task--done">
+                    <span class="runbook-task__check">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                    </span>
+                    <span class="runbook-task__name">Execute database failover</span>
+                    <span class="badge badge--success badge--sm">Done</span>
+                    <span class="runbook-task__assignee">DBA Team</span>
+                  </div>
+                  <div class="runbook-task runbook-task--active">
+                    <span class="runbook-task__check runbook-task__check--active"></span>
+                    <span class="runbook-task__name">Validate application connectivity</span>
+                    <span class="badge badge--active badge--sm">In Progress</span>
+                    <span class="runbook-task__assignee">App Support</span>
+                  </div>
+                  <div class="runbook-task runbook-task--pending">
+                    <span class="runbook-task__check runbook-task__check--pending"></span>
+                    <span class="runbook-task__name">Run end-to-end transaction test</span>
+                    <span class="badge badge--pending badge--sm">Pending</span>
+                    <span class="runbook-task__assignee">QA Team</span>
+                  </div>
+                  <div class="runbook-task runbook-task--pending">
+                    <span class="runbook-task__check runbook-task__check--pending"></span>
+                    <span class="runbook-task__name">DR Manager sign-off</span>
+                    <span class="badge badge--pending badge--sm">Approval</span>
+                    <span class="runbook-task__assignee">DR Lead</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Task Tab -->
+        <div class="platform__panel" id="tab-task">
+          <div class="platform-screen">
+            <div class="platform-screen__header">
+              <div class="platform-screen__dots"><span></span><span></span><span></span></div>
+              <div class="platform-screen__url">app.resiliencepro.io/tasks/validate-connectivity</div>
+            </div>
+            <div class="platform-screen__body">
+              <div class="task-preview">
+                <div class="task-preview__header">
+                  <h3>Validate Application Connectivity</h3>
+                  <span class="badge badge--active">In Progress</span>
+                </div>
+                <div class="task-preview__details">
+                  <div class="task-preview__detail">
+                    <span class="task-preview__detail-label">Assigned To</span>
+                    <span class="task-preview__detail-value">App Support Team</span>
+                  </div>
+                  <div class="task-preview__detail">
+                    <span class="task-preview__detail-label">SLA</span>
+                    <span class="task-preview__detail-value task-preview__detail-value--timer">23:45 remaining</span>
+                  </div>
+                  <div class="task-preview__detail">
+                    <span class="task-preview__detail-label">Procedure</span>
+                    <span class="task-preview__detail-value">Core Banking DR Exercise</span>
+                  </div>
+                  <div class="task-preview__detail">
+                    <span class="task-preview__detail-label">Dependencies</span>
+                    <span class="task-preview__detail-value">Database Failover (completed)</span>
+                  </div>
+                </div>
+                <div class="task-preview__checklist">
+                  <div class="task-preview__checklist-title">Evidence Checklist</div>
+                  <label class="task-preview__check-item task-preview__check-item--done">
+                    <span class="task-preview__checkbox task-preview__checkbox--checked"></span>
+                    Verify CMS application responds on DR endpoint
+                  </label>
+                  <label class="task-preview__check-item task-preview__check-item--done">
+                    <span class="task-preview__checkbox task-preview__checkbox--checked"></span>
+                    Confirm database connection string points to DR instance
+                  </label>
+                  <label class="task-preview__check-item">
+                    <span class="task-preview__checkbox"></span>
+                    Test login with service account credentials
+                  </label>
+                  <label class="task-preview__check-item">
+                    <span class="task-preview__checkbox"></span>
+                    Validate API health check endpoints return 200
+                  </label>
+                </div>
+                <div class="task-preview__comments">
+                  <div class="task-preview__comment">
+                    <strong>Sarah Chen</strong> <span class="task-preview__comment-time">2 min ago</span>
+                    <p>CMS application responding on DR endpoint. Moving to DB connection validation.</p>
+                  </div>
+                  <div class="task-preview__comment">
+                    <strong>Ahmad Razak</strong> <span class="task-preview__comment-time">5 min ago</span>
+                    <p>DB failover completed successfully. Connection string updated. Handing over to App Support.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="benefits" id="benefits">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-label">Why ResiliencePro</span>
+        <h2 class="section-title">Operational resilience,<br>measured and improved</h2>
+      </div>
+      <div class="benefits__grid" data-animate="fade-up" data-delay="200">
+        <div class="benefit-card">
+          <div class="benefit-card__number">73%</div>
+          <h3 class="benefit-card__title">Faster Incident Response</h3>
+          <p class="benefit-card__text">Automated task orchestration and real-time coordination eliminate manual handoffs and reduce mean time to recovery.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-card__number">100%</div>
+          <h3 class="benefit-card__title">Audit Completeness</h3>
+          <p class="benefit-card__text">Every action is automatically logged with full context. No more reconstructing timelines from email threads.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-card__number">360&deg;</div>
+          <h3 class="benefit-card__title">Operational Visibility</h3>
+          <p class="benefit-card__text">Leadership sees real-time status across all procedures, teams, and SLA metrics from a single command dashboard.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-card__number">5x</div>
+          <h3 class="benefit-card__title">Better Coordination</h3>
+          <p class="benefit-card__text">Multi-team procedures that used to require constant phone calls now flow seamlessly through structured, real-time workflows.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CTA Section -->
+  <section class="cta" id="contact">
+    <div class="container">
+      <div class="cta__inner" data-animate="fade-up">
+        <div class="cta__content">
+          <h2 class="cta__title">Ready to take command of your critical operations?</h2>
+          <p class="cta__description">See how ResiliencePro can transform your organization's operational resilience. Book a personalized demo with our team.</p>
+          <div class="cta__actions">
+            <a href="mailto:sales@resiliencepro.io" class="btn btn--white btn--lg">
+              Request a Demo
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="mailto:sales@resiliencepro.io" class="btn btn--ghost-white btn--lg">Contact Sales</a>
+          </div>
+        </div>
+        <div class="cta__features">
+          <div class="cta__feature">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 0a10 10 0 110 20 10 10 0 010-20zm-1.5 14.5l7-7-1.4-1.4-5.6 5.6-2.6-2.6-1.4 1.4 4 4z" fill="currentColor"/></svg>
+            <span>Personalized demo for your industry</span>
+          </div>
+          <div class="cta__feature">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 0a10 10 0 110 20 10 10 0 010-20zm-1.5 14.5l7-7-1.4-1.4-5.6 5.6-2.6-2.6-1.4 1.4 4 4z" fill="currentColor"/></svg>
+            <span>Free proof-of-concept deployment</span>
+          </div>
+          <div class="cta__feature">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 0a10 10 0 110 20 10 10 0 010-20zm-1.5 14.5l7-7-1.4-1.4-5.6 5.6-2.6-2.6-1.4 1.4 4 4z" fill="currentColor"/></svg>
+            <span>Enterprise security assessment included</span>
+          </div>
+          <div class="cta__feature">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 0a10 10 0 110 20 10 10 0 010-20zm-1.5 14.5l7-7-1.4-1.4-5.6 5.6-2.6-2.6-1.4 1.4 4 4z" fill="currentColor"/></svg>
+            <span>No credit card required</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#" class="nav__logo">
+            <img src="assets/images/logo.png" alt="ResiliencePro" class="nav__logo-img">
+          </a>
+          <p class="footer__tagline">The operational resilience command platform for enterprises that can't afford downtime.</p>
+        </div>
+        <div class="footer__links-group">
+          <h4>Platform</h4>
+          <a href="#features">Features</a>
+          <a href="#platform">Product Tour</a>
+          <a href="#industries">Industries</a>
+          <a href="#benefits">Benefits</a>
+        </div>
+        <div class="footer__links-group">
+          <h4>Industries</h4>
+          <a href="#industries">Banking & Finance</a>
+          <a href="#industries">Oil & Gas</a>
+          <a href="#industries">Energy & Utilities</a>
+          <a href="#industries">Telecommunications</a>
+          <a href="#industries">Data Centers</a>
+          <a href="#industries">Manufacturing</a>
+        </div>
+        <div class="footer__links-group">
+          <h4>Company</h4>
+          <a href="#contact">About</a>
+          <a href="#contact">Contact Sales</a>
+          <a href="#contact">Careers</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 ResiliencePro. All rights reserved.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="#" aria-label="Twitter">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
